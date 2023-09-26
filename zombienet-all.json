@@ -12,7 +12,7 @@
         "rpc_port": 8000,
         "ws_port": 9000,
         "prometheus_port": 8000,
-        "seed": "Alice"
+        "seed": "//Alice"
       },
       {
         "name": "bob",
@@ -22,7 +22,7 @@
         "rpc_port": 8001,
         "ws_port": 9001,
         "prometheus_port": 8001,
-        "seed": "Bob"
+        "seed": "//Bob"
       }
     ]
   },
@@ -37,8 +37,8 @@
       "onboard_as_parachain": true,
       "collators": [
         {
-          "name": "parachain",
-          "command": "genesis-node",
+          "name": "collator-one",
+          "command": "<collator-one-binary-name>",
           "p2p_port": 30002,
           "rpc_port": 8002,
           "ws_port": 9002,
